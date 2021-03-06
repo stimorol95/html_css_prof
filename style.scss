@@ -13,7 +13,7 @@
 }
 
 .page_header {
-    background:  #ffffff;
+    background: #ffffff;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -31,10 +31,9 @@
   &_title {
     padding-right: 37px;
     font-size: 27px;
-    font-weight: 300;
+    font-weight: 100;
     letter-spacing: 0.68px;
   }
-
 
   &_link {
     text-decoration: none;
@@ -57,7 +56,7 @@
 
 .color {
   color: #f16d7f;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .page_header_menu{
@@ -87,7 +86,7 @@
   margin-bottom: 98px;
 
   &_text {
-    max-height: 92px;
+    max-height: 485px;
     padding-top: 224px;
   }
 
@@ -104,7 +103,7 @@
   &_subtitle {
     font-weight: 900;
     font-size: 40px;
-    line-height: 44,4px;
+    line-height: 44px;
     text-transform: uppercase;
     border-left: 12px solid #f16d7f;
     padding-left: 12px;
@@ -239,10 +238,12 @@
   display: flex;
   flex-flow: wrap;
   align-items: center;
+  
 
   &_heading {
     text-align: center;
     justify-content: center;
+    width: 1140px;
   }
 
   &_heading_title {
@@ -285,6 +286,7 @@
     font-size: 16px;
     line-height: 19px;
     color: #f16d7f;
+    font-weight: 600;
   }
 
   &_btn {
@@ -305,12 +307,18 @@
 }
 
 .features {
-  width: 100%;
   display: flex;
   background-color: #222224;
   position: relative;
   margin-bottom: 97px;
 
+  &_offer {
+    background-image: url(img/winter_girl.jpg);
+    min-height: 529px;
+    min-width: 768px;
+    background-repeat: no-repeat;
+  }
+  
   &_text {
     position: absolute;
     top: 146px;
@@ -329,8 +337,9 @@
   }
 
   &_item {
-    flex-flow:  wrap;
+    flex-flow: wrap;
     display: flex;
+    margin: 57px 0 0 37px;
   }
 
   &_item_icon {
@@ -339,7 +348,6 @@
     border: none;
     background-color: transparent;
     fill:  #f16d7f;
-    margin: 25px 0 0 36px;
   }
 
   &_item_title {
@@ -348,8 +356,7 @@
     font-size: 20px;
     letter-spacing: 0.5px;
     color: #fbfbfb;
-    margin: 15px 0 0 33px;
-    padding-top: 20px;
+    padding: 5px 0 0 31px;
   }
 
   &_item_txt {
@@ -360,14 +367,18 @@
     line-height: 24px;
     text-align: left;
     color: #fbfbfb;
-    margin: 0 0 0 105px;
+    margin-left: 68px;
     max-width: 219px;
     max-height: 58px;
+    padding-top: 12px;
+    opacity: 0.7;
   }
 }
 
 .subscribe {
   position: relative;
+  display: flex;
+  min-height: 438px;
 
   &_bcg{
     position: relative;
@@ -381,6 +392,8 @@
     flex-direction: column;
     padding-top: 19px;
     line-height: 20px;
+    font-weight: 300;
+    padding-left: 28px;
   }
 
   &_name_subtitle {
@@ -389,27 +402,29 @@
     font-weight: 700;
   }
 
-  &_next_quote {
+  &_check_quote {
     margin-top: 41px;
+    margin-left: 110px;
+  }
+
+  &_next_quote {
     margin-left: 5px;
   }
 
   &_info {
-  min-height: 438px;
-  padding-top: 111px;
-  display: flex;
-  
+    display: flex;
   }
 
   &_info_avatar {
     display: flex;
     justify-content: center;
-    padding-bottom: 40px;
     background-color: none;
   }
 
   &_info_quote {
-    margin-left: 28px;
+    display: flex;
+    padding-top: 97px;
+    margin-right: 72px;
   }
 
   &_info_txt {
@@ -421,13 +436,16 @@
     display: block;
     letter-spacing: 0.4px;
     max-width: 390px;
+    padding-left: 28px;
+    font-weight: 600;
   }
 
-  &_check {
+    &_check {
     display: flex;
     flex-direction: column;
-    padding-left: 150px;
-    padding-top: 25px;
+    padding-left: 92px;
+    padding-top: 97px;
+    border-left: 1px solid #ffffff;
   }
 
   &_title {
@@ -438,7 +456,8 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding-left: 10px;
-    font-weight: 400;
+    font-weight: 500;
+    padding-top: 25px;
   }
 
   &_subtitle {
@@ -488,7 +507,7 @@
   background: url(img/sea.png) no-repeat;
   background-size: cover;
   content: "";
-  opacity: 0.5;
+  opacity: 0.7;
   top: 0;
   left: 0;
   bottom: 0;
@@ -549,10 +568,8 @@
 
 .footer_bottom {
   display: flex;
-  
-  &_bcg {
-    background: #e6e6e6;
-  }
+  background: #e6e6e6;
+
 
   &_about {
     padding: 33px 0;

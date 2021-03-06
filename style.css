@@ -40,7 +40,7 @@
 .page_header_title {
   padding-right: 37px;
   font-size: 27px;
-  font-weight: 300;
+  font-weight: 100;
   letter-spacing: 0.68px;
 }
 
@@ -64,7 +64,7 @@
 
 .color {
   color: #f16d7f;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .page_header_menu {
@@ -103,7 +103,7 @@
 }
 
 .page_main_banner_text {
-  max-height: 92px;
+  max-height: 485px;
   padding-top: 224px;
 }
 
@@ -120,7 +120,7 @@
 .page_main_banner_subtitle {
   font-weight: 900;
   font-size: 40px;
-  line-height: 44,4px;
+  line-height: 44px;
   text-transform: uppercase;
   border-left: 12px solid #f16d7f;
   padding-left: 12px;
@@ -274,6 +274,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 1140px;
 }
 
 .products_heading_title {
@@ -322,6 +323,7 @@
   font-size: 16px;
   line-height: 19px;
   color: #f16d7f;
+  font-weight: 600;
 }
 
 .products_btn {
@@ -341,13 +343,19 @@
 }
 
 .features {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #222224;
   position: relative;
   margin-bottom: 97px;
+}
+
+.features_offer {
+  background-image: url(img/winter_girl.jpg);
+  min-height: 529px;
+  min-width: 768px;
+  background-repeat: no-repeat;
 }
 
 .features_text {
@@ -373,6 +381,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 57px 0 0 37px;
 }
 
 .features_item_icon {
@@ -385,7 +394,6 @@
   border: none;
   background-color: transparent;
   fill: #f16d7f;
-  margin: 25px 0 0 36px;
 }
 
 .features_item_title {
@@ -398,8 +406,7 @@
   font-size: 20px;
   letter-spacing: 0.5px;
   color: #fbfbfb;
-  margin: 15px 0 0 33px;
-  padding-top: 20px;
+  padding: 5px 0 0 31px;
 }
 
 .features_item_txt {
@@ -414,13 +421,19 @@
   line-height: 24px;
   text-align: left;
   color: #fbfbfb;
-  margin: 0 0 0 105px;
+  margin-left: 68px;
   max-width: 219px;
   max-height: 58px;
+  padding-top: 12px;
+  opacity: 0.7;
 }
 
 .subscribe {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 438px;
 }
 
 .subscribe_bcg {
@@ -440,6 +453,8 @@
           flex-direction: column;
   padding-top: 19px;
   line-height: 20px;
+  font-weight: 300;
+  padding-left: 28px;
 }
 
 .subscribe_name_subtitle {
@@ -448,14 +463,16 @@
   font-weight: 700;
 }
 
-.subscribe_next_quote {
+.subscribe_check_quote {
   margin-top: 41px;
+  margin-left: 110px;
+}
+
+.subscribe_next_quote {
   margin-left: 5px;
 }
 
 .subscribe_info {
-  min-height: 438px;
-  padding-top: 111px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -468,12 +485,15 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 40px;
   background-color: none;
 }
 
 .subscribe_info_quote {
-  margin-left: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 97px;
+  margin-right: 72px;
 }
 
 .subscribe_info_txt {
@@ -485,6 +505,8 @@
   display: block;
   letter-spacing: 0.4px;
   max-width: 390px;
+  padding-left: 28px;
+  font-weight: 600;
 }
 
 .subscribe_check {
@@ -495,8 +517,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 150px;
-  padding-top: 25px;
+  padding-left: 92px;
+  padding-top: 97px;
+  border-left: 1px solid #ffffff;
 }
 
 .subscribe_title {
@@ -507,7 +530,8 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   padding-left: 10px;
-  font-weight: 400;
+  font-weight: 500;
+  padding-top: 25px;
 }
 
 .subscribe_subtitle {
@@ -556,7 +580,7 @@
   background: url(img/sea.png) no-repeat;
   background-size: cover;
   content: "";
-  opacity: 0.5;
+  opacity: 0.7;
   top: 0;
   left: 0;
   bottom: 0;
@@ -632,9 +656,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.footer_bottom_bcg {
   background: #e6e6e6;
 }
 
